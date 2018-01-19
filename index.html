@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charset="UTF-8">
+        <title>扭蛋机抽奖-物美商业</title>
+        <link href="assets/images/rtl-title.ico" rel="shortcut icon" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Cache-Control" CONTENT= "no-cache, must-revalidate">
+        <META HTTP-EQUIV="expires" CONTENT= "Wed, 26 Feb 1997 08:21:57 GMT">
+        <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="./javascripts/core/bootstrap/respond.min.js"></script>
+        <script type="text/javascript" src="./javascripts/core/bootstrap/html5shiv.min.js"></script>
+        <![endif]-->
+	</head>
+	<body>
+		<div class="ball">
+			<div class="ball-machine">
+				<div class="ball-title"></div>
+				<div class="ball-content">
+					<div class="ball-content-item item fore1"></div>
+					<div class="ball-content-item item fore2"></div>
+					<div class="ball-content-item item fore3"></div>
+					<div class="ball-content-item item fore4"></div>
+					<div class="ball-content-item item fore5"></div>
+					<div class="ball-content-item item fore6"></div>
+				</div>
+				<div class="ball-content-lamp"></div>
+				<div class="ball-footer">
+					<div class="ball-footer-switch">
+						<div class="back">
+							<div class="switch"></div>
+						</div>
+					</div>
+					<div class="ball-footer-button">
+						<a class="btn btn-link"></a>
+					</div>
+					<div class="ball-footer-result">
+						<div class="result">
+							<div class="result-ball"></div>
+						</div>
+						<div class="lamp-content">
+							<div class="lamp-left"></div>
+							<div class="lamp-top"></div>
+							<div class="lamp-right"></div>
+							<div class="lamp-top-left">
+								<div class="item-lamp"></div>
+							</div>
+							<div class="lamp-top-right">
+								<div class="item-lamp"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ball-cloud"></div>
+		</div>
+		<!-- 弹出验证资格 -->
+		<div class="modal bs-example-modal-lg fade" id="myModalQualifications">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		      	<h3 class="title">抽奖资格验证</h3>
+		      	<form class="form-horizontal" id="queryFrom">
+		      		<div class="form-group">
+					    <div class="col-sm-12">
+					      	<input type="text" tabindex="-1" class="form-control" id="receipt" placeholder="请输入或扫描小票">
+					    </div>
+					</div>
+					<div class="form-group msgDiv">
+						<div class="col-sm-12">
+							<div class="msg">12312312</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-6">会员姓名：<span class="item name">--</span></div>
+						<div class="col-sm-6">手机号码：<span class="item phone">--</span></div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-6">小票金额：<span class="item money">--</span></div>
+						<div class="col-sm-6">会员卡号：<span class="item account">--</span></div>
+					</div>
+		      	</form>
+		      </div>
+		      <div class="modal-footer tc">
+		        <button type="button" class="btn btn-info btn-lg" id="query">查询</button>
+		        <button type="button" class="btn btn-default btn-lg" disabled="true" id="luck-draw">抽奖</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		
+		<!--展示奖品-->
+		<div class="prize">
+			<div class="prize-close">3s后继续抽奖</div>
+			<div class="prize-dialog">
+				<div class="prize-title"></div>
+				<div class="prize-content">
+					<div class="prize-box"></div>
+				</div>	
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="assets/javascripts/core/jquery/jquery.min.js" ></script>
+		<script type="text/javascript" src="assets/javascripts/core/bootstrap/bootstrap.js" ></script>
+        <script type="text/javascript" src="assets/javascripts/modules/index/index.js" ></script>
+	</body>
+</html>
